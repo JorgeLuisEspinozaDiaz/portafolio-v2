@@ -1,0 +1,64 @@
+import React from "react";
+import fondo from "../../public/fon1.jpeg";
+import About from "./About";
+import Technologies from "./Technologies";
+import { Typewriter } from "react-simple-typewriter";
+import Softskills from "./Softskills";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Top from "./Top";
+
+const Main = () => {
+  const handleType = (count) => {
+    console.log(count);
+  };
+
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`);
+  };
+
+  return (
+    <main
+      id="Home"
+      className="ml-[300px] bg-white transition-all duration-300   max-[1050px]:ml-0 relative "
+    >
+      <section
+        style={{ backgroundImage: `url(${fondo})` }}
+        className="h-screen w-full bg-no-repeat bg-cover bg-fixed	 flex  flex-col justify-center relative  p-[70px] 
+        before:content-[''] before:w-full before:h-full before:bg-[#18171750]  before:absolute before:top-0 before:left-0 max-[670px]:p-[30px] "
+      >
+        <div className="z-10 ">
+          <h1 className="text-white text-6xl font-semibold mb-1 leading-[70px] max-[670px]:text-3xl   max-[670px]:leading-[50px] ">
+            ¡Hola! soy Jorge Espinoza{" "}
+            <span style={{ color: "#00dfd8", fontWeight: "bold" }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={["web developer"]}
+                loop={Infinity}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+                onLoopDone={handleDone}
+                onType={handleType}
+              />
+            </span>
+          </h1>
+
+          <p className="text-white text-3xl font-medium ">
+            apasionado por la tecnologia y la programación
+          </p>
+        </div>
+      </section>
+      <About />
+      <Technologies />
+      {/* <Softskills /> */}
+      <Projects />
+      <Contact />
+      <Top />
+    </main>
+  );
+};
+
+export default Main;
