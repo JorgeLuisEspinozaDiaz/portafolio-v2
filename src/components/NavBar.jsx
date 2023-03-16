@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import foto from "../../public/nav.png";
 const NavBar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const opens = () => {
     setOpen(!open);
@@ -22,11 +22,11 @@ const NavBar = () => {
       )}
 
       <header
-        className={`h-screen bg-[#03051c] w-[300px] fixed top-0 left-0 bottom-0 py-8 px-6 z-50 transition-all duration-500   ${
-          open ? "max-[1050px]:left-[-300px]" : "max-[1050px]:left-[0px]"
+        className={`h-screen bg-[#03051c] w-[300px] fixed top-0 left-0 bottom-0 py-8 px-6 z-[9999] transition-all duration-500 overflow-y-auto  ${
+          open ? "max-[1050px]:left-[-300px]" : "max-[1050px]:left-[0px] "
         } `}
       >
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center ">
           <img
             className="w-40 h-40 rounded-full object-cover"
             src={foto}
@@ -35,7 +35,7 @@ const NavBar = () => {
           <h1 className="font-Roboto  text-3xl font-bold m-4">
             Jorge Espinoza
           </h1>
-          <div className="flex gap-2 text-2xl ">
+          <div className="flex gap-2 text-2xl  ">
             <a
               className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center p-3 hover:bg-[#ddd9d9]	"
               href="#"
