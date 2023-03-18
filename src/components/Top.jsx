@@ -7,7 +7,7 @@ const Top = () => {
   return (
     <i
       onClick={handleClick}
-      className="fa-sharp fa-solid fa-chevron-up fixed right-5 bottom-5 w-[40px] h-[40px] text-black bg-[#00dfd8]
+      className="fa-sharp fa-solid fa-chevron-up fixed right-5 bottom-5 w-[40px] h-[40px] text-withe bg-[#14b6bb]
        text-3xl text-center leading-[40px] rounded-full animate-bounce cursor-pointer "
     ></i>
   );

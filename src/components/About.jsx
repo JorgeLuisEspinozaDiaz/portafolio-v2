@@ -12,7 +12,7 @@ const About = () => {
         Acerca de mí
       </h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>
-      <p className="text-lg text-justify mt-4 font-medium  ">
+      <p className="text-base text-justify mt-4 font-medium   ">
         ¡Hola! Mi nombre es <strong>Jorge Espinoza</strong> soy muy apasionado y
         dedicado a mi trabajo. Con el compromiso que me caracteriza busco
         mejorar mis conocimientos cada día. En este momento estoy buscando
@@ -30,7 +30,7 @@ const About = () => {
           <h2 className="text-3xl font-bold  max-[850px]:text-2xl text-[#00dfd8]  ">
             Front-End Developer!
           </h2>
-          <p className="text-base italic font-normal mt-[15px]">
+          <p className="text-base italic font-normal mt-[15px]  text-justify">
             Soy desarrollador web Full Stack enfocado en el front-end del
             desarrollo de aplicaciones y plataformas web, en la cual, siempre
             estoy dispuesto en mejorar mis habilidades, creando proyectos,
@@ -42,7 +42,7 @@ const About = () => {
               <li className="my-[8px] mx-0">
                 <i className="fa-sharp fa-solid fa-phone-volume mr-[4px] text-orange-500"></i>
                 <strong className="font-semibold">Telefono:</strong>
-                <span className="ml-1 font-medium ">+51 910-552-498</span>
+                <span className="ml-1 font-medium "> (+51) 910-552-498</span>
               </li>
               <li className="my-[8px] mx-0">
                 <i className="fa-sharp fa-solid fa-calendar-days mr-[4px] text-orange-500"></i>
@@ -69,9 +69,9 @@ const About = () => {
                 </span>
               </li>
             </ul>
-            <button className="bg-[#00dfd8] text-black font-semibold cursor-pointer text-xl p-2 rounded transition-all duration-500 hover:translate-y-1 animate-bounce mt-[15px]">
+            <button className="bg-[#14b6bb] text-white font-semibold cursor-pointer text-xl p-2 rounded transition-all duration-500 hover:translate-y-1 animate-bounce mt-[15px]">
               <a href={cv} download>
-                <i className="fa-solid fa-download mr-2 text-black"></i>
+                <i className="fa-solid fa-download mr-2 bg-[#14b6bb]"></i>
                 Descargar cv
               </a>
             </button>

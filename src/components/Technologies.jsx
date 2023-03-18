@@ -2,6 +2,7 @@ import React from "react";
 import git from "../../public/git.png";
 import post from "../../public/post.png";
 import router from "../../public/router.png";
+import bootstrap from "../../public/bootstrap.png";
 
 const Technologies = () => {
   return (
@@ -22,7 +23,7 @@ const Technologies = () => {
             src="https://enriquezapata.com/wp-content/uploads/2021/12/kisspng-react-javascript-responsive-web-design-github-angu-github-5accac250cda95.4452823815233628530527.png"
             alt=""
           />
-          <p className="text-center font-semibold ">React</p>
+          <p className="text-center font-semibold  text-[#00dfd8]">React</p>
         </div>
         <div className="w-full h-[86px]">
           <img
@@ -30,7 +31,7 @@ const Technologies = () => {
             src={router}
             alt=""
           />
-          <p className="text-center font-semibold">R Router</p>
+          <p className="text-center font-semibold text-[#00dfd8]">R Router</p>
         </div>
 
         <div className="w-full h-[86px]">
@@ -39,7 +40,7 @@ const Technologies = () => {
             src="https://cdn.worldvectorlogo.com/logos/redux.svg"
             alt=""
           />
-          <p className="text-center font-semibold">Redux</p>
+          <p className="text-center font-semibold text-[#00dfd8]">Redux</p>
         </div>
 
         <div className="w-full h-[86px]">
@@ -48,7 +49,9 @@ const Technologies = () => {
             src="https://zaidakary.github.io/Portafolio/imagenes/javascript.jpg"
             alt=""
           />
-          <p className="text-center font-semibold ">JavaScript</p>
+          <p className="text-center font-semibold text-[#00dfd8] ">
+            JavaScript
+          </p>
         </div>
 
         <div className="w-full h-[86px]">
@@ -57,7 +60,7 @@ const Technologies = () => {
             src="https://icon-library.com/images/html5-icon/html5-icon-13.jpg"
             alt=""
           />
-          <p className="text-center font-semibold">HTML</p>
+          <p className="text-center font-semibold text-[#00dfd8]">HTML</p>
         </div>
 
         <div className="w-full h-[86px]">
@@ -66,7 +69,7 @@ const Technologies = () => {
             src="https://icons-for-free.com/iconfiles/svg/0/css3+internet+style+technology+web+website+icon-1320192729058533072.svg"
             alt=""
           />
-          <p className="text-center font-semibold">CSS</p>
+          <p className="text-center font-semibold text-[#00dfd8]">CSS</p>
         </div>
 
         <div className="w-full h-[86px]">
@@ -75,7 +78,7 @@ const Technologies = () => {
             src="https://3.bp.blogspot.com/-xhNpNJJyQhk/XIe4GY78RQI/AAAAAAAAItc/ouueFUj2Hqo5dntmnKqEaBJR4KQ4Q2K3ACK4BGAYYCw/s1600/logo%2Bgit%2Bicon.png"
             alt=""
           />
-          <p className="text-center font-semibold">Git</p>
+          <p className="text-center font-semibold text-[#00dfd8]">Git</p>
         </div>
 
         <div className="w-full h-[86px]">
@@ -84,7 +87,7 @@ const Technologies = () => {
             src={git}
             alt=""
           />
-          <p className="text-center font-semibold">GitHub</p>
+          <p className="text-center font-semibold text-[#00dfd8]">GitHub</p>
         </div>
         <div className="w-full h-[86px]">
           <img
@@ -92,7 +95,16 @@ const Technologies = () => {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png"
             alt=""
           />
-          <p className="text-center font-semibold">Tailwind</p>
+          <p className="text-center font-semibold text-[#00dfd8]">Tailwind</p>
+        </div>
+
+        <div className="w-full h-[86px]">
+          <img
+            className="w-full h-full object-contain animate-wiggle"
+            src={bootstrap}
+            alt=""
+          />
+          <p className="text-center font-semibold text-[#00dfd8]">Bootstrap</p>
         </div>
         <div className="w-full h-[86px]">
           <img
@@ -100,7 +112,7 @@ const Technologies = () => {
             src={post}
             alt=""
           />
-          <p className="text-center font-semibold">PostGress</p>
+          <p className="text-center font-semibold text-[#00dfd8]">PostGress</p>
         </div>
       </div>
     </section>

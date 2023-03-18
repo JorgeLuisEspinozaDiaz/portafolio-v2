@@ -1,11 +1,11 @@
 import React from "react";
-
 import crud from "../../public/projects/crud.png";
 import ecommerce from "../../public/projects/ecommerce.png";
 import pokemon from "../../public/projects/pokemon.png";
 import quotes from "../../public/projects/quotes.png";
 import rick from "../../public/projects/rickandmorty.png";
 import weather from "../../public/projects/weather.png";
+import destino from "../../public/projects/destinoApp.png";
 
 import style from "./style/project.module.css";
 
@@ -28,6 +28,45 @@ const Projects = () => {
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
+            src={destino}
+            alt=""
+          />
+
+          <div
+            className={`${style.capa} absolute bottom-0 w-full h-full bg-[rgba(0,0,0,.7)]	 translate-y-full  transition-all duration-500 ease-out`}
+          >
+            <div className="p-5 relative ">
+              <h4 className="text-white text-center text-3xl font-bold">
+                Tu DestinoAPP
+              </h4>
+              <p className=" mt-4 text-justify italic font-medium text-slate-400 text-sm  md:text-base  2xl:text-lg">
+                Tu Destino app es una aplicación para reservas, booking de
+                alojamiento, alquiler de casa, apartamento o habitación.
+                Tecnologias y librerías utilizadas en el front React,
+                Axios,React-Hook-Form React-Hook-Form, Redux toolkit,
+                React-Router-Dom, tailwind,Javascript, HTML. En el back end
+                ExpressJS y MongoBD.
+              </p>
+            </div>
+            <div className="absolute bottom-3 right-3 flex gap-3">
+              <a href="https://github.com/No-Country/c9-54-t-mern">
+                <i className="fa-brands fa-github text-4xl"></i>
+              </a>
+              <a
+                href="https://tu-destino-app-client.vercel.app/"
+                target="_blank"
+              >
+                <i className="fa-sharp fa-solid fa-eye text-4xl"></i>
+              </a>
+            </div>
+          </div>
+        </figure>
+
+        <figure
+          className={`${style.project__figure}  ${style.box} w-full h-80  relative overflow-hidden rounded-lg `}
+        >
+          <img
+            className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
             src={ecommerce}
             alt=""
           />
@@ -40,10 +79,11 @@ const Projects = () => {
                 Ecommerce
               </h4>
               <p className=" mt-4 text-justify italic font-medium text-slate-400 text-sm  md:text-base  2xl:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                ex quia fugit provident, nobis accusamus impedit neque earum
-                reprehenderit minima esse hic vitae. Quos reprehenderit
-                explicabo provident, dignissimos quidem aut!
+                El sitio de comercio electrónico , el sitio web ofrece una
+                interfaz de usuario dinámica para una experiencia de compra.
+                Tecnologias y librerías utilizadas en el front React,
+                Axios,React-Hook-Form React-Hook-Form, Redux toolkit ,
+                React-Router-Dom, Javascript, HTML y css.
               </p>
             </div>
             <div className="absolute bottom-3 right-3 flex gap-3">

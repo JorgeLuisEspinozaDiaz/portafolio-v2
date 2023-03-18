@@ -22,7 +22,7 @@ const NavBar = () => {
       )}
 
       <header
-        className={`h-screen bg-[#03051c] w-[300px] fixed top-0 left-0 bottom-0 py-8 px-6 z-[9999] transition-all duration-500 overflow-y-auto  ${
+        className={`h-screen bg-[#03051c] w-[300px] fixed top-0 left-0 bottom-0 py-8 px-6 z-40 transition-all duration-500 overflow-y-auto  ${
           open ? "max-[1050px]:left-[-300px]" : "max-[1050px]:left-[0px] "
         } `}
       >
@@ -85,6 +85,15 @@ const NavBar = () => {
             </li>
             <li>
               <a
+                href="#Resume"
+                className="hover:text-[#00dfd8]  cursor-pointer "
+              >
+                <i className="fa-sharp fa-solid fa-graduation-cap text-xl mr-[10px] "></i>
+                Educacion
+              </a>
+            </li>
+            <li>
+              <a
                 href="#Project"
                 className="hover:text-[#00dfd8]  cursor-pointer "
               >
@@ -105,11 +114,14 @@ const NavBar = () => {
         </nav>
 
         <div
-          className={`text-center w-[300px] fixed   bottom-0 mb-4  left-0 transition-all duration-500 ${
+          className={`text-center w-[300px] fixed   bottom-0 mb-0  left-0 transition-all duration-500 z-50 bg-[#03051c] ${
             open ? "max-[1050px]:left-[-300px]" : "max-[1050px]:left-[0px]"
           }`}
         >
-          <p>&copy; Jorge espinoza, 2023 Todos los derechos reservados</p>
+          <p className="mb-4">
+            &copy; Copyright{" "}
+            <span className="font-semibold">Jorge Espinoza</span>
+          </p>
         </div>
       </header>
     </>

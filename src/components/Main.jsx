@@ -7,6 +7,7 @@ import Softskills from "./Softskills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Top from "./Top";
+import Resume from "./Resume";
 
 const Main = () => {
   const handleType = (count) => {
@@ -54,6 +55,7 @@ const Main = () => {
       <About />
       <Technologies />
       {/* <Softskills /> */}
+      <Resume />
       <Projects />
       <Contact />
       <Top />

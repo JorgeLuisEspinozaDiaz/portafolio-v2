@@ -10,6 +10,9 @@ const Contact = () => {
     >
       <h1 className="text-3xl font-semibold mb-3 text-[#00dfd8]">Contacto</h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>
+      <p className="text-lg text-justify mt-4 font-medium  ">
+        Puedes contactarme enviándome un correo electrónico
+      </p>
 
       <div className="mt-[50px] flex flex-col gap-8  md:flex-row ">
         <div
@@ -62,7 +65,10 @@ const Contact = () => {
             <div>
               <h2 className="text-xl font-semibold">Telefono:</h2>
               <a href="tel:+51910552498">
-                <span className=" text-base text-white">+51 910 552 498</span>
+                <span className=" text-base text-white">
+                  {" "}
+                  (+51) 910-552-498
+                </span>
               </a>
             </div>
           </div>
@@ -104,7 +110,7 @@ const Contact = () => {
             </div>
             <div className="w-full  mt-6">
               <button
-                className="w-full text-black font-bold  h-10  text-lg rounded-[4px] bg-[#00dfd8]  cursor-pointer"
+                className="w-full text-white font-bold  h-10  text-lg rounded-[4px] bg-[#14b6bb]  cursor-pointer"
                 type="submit"
               >
                 Enviar
