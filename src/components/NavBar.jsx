@@ -7,6 +7,13 @@ const NavBar = () => {
     setOpen(!open);
   };
 
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleClick = (option) => {
+    setSelectedOption(option);
+  };
+
+  console.log(open);
   return (
     <>
       {open ? (
@@ -65,26 +72,44 @@ const NavBar = () => {
 
         <nav className="mt-[50px]">
           <ul className="flex  flex-col gap-6">
-            <li className="">
+            <li
+              onClick={() => handleClick("opcion1")}
+              className={
+                selectedOption === "opcion1" ? "text-[#00dfd8]" : "text-white"
+              }
+            >
               <a
+                onClick={opens}
                 href="#Home"
-                className="hover:text-[#00dfd8]   cursor-pointer  "
+                className="hover:text-[#00dfd8] cursor-pointer"
               >
                 <i className="fa-solid fa-house text-xl mr-[10px] "></i>
                 Home
               </a>
             </li>
-            <li>
+            <li
+              onClick={() => handleClick("opcion2")}
+              className={
+                selectedOption === "opcion2" ? "text-[#00dfd8]" : "text-white"
+              }
+            >
               <a
                 href="#About"
+                onClick={opens}
                 className="hover:text-[#00dfd8]    cursor-pointer"
               >
                 <i className="fa-solid fa-user text-xl mr-[10px] "></i>
                 Acerca de Mí
               </a>
             </li>
-            <li>
+            <li
+              onClick={() => handleClick("opcion3")}
+              className={
+                selectedOption === "opcion3" ? "text-[#00dfd8]" : "text-white"
+              }
+            >
               <a
+                onClick={opens}
                 href="#Resume"
                 className="hover:text-[#00dfd8]  cursor-pointer "
               >
@@ -92,8 +117,14 @@ const NavBar = () => {
                 Educacion
               </a>
             </li>
-            <li>
+            <li
+              onClick={() => handleClick("opcion4")}
+              className={
+                selectedOption === "opcion4" ? "text-[#00dfd8]" : "text-white"
+              }
+            >
               <a
+                onClick={opens}
                 href="#Project"
                 className="hover:text-[#00dfd8]  cursor-pointer "
               >
@@ -101,8 +132,14 @@ const NavBar = () => {
                 Proyectos
               </a>
             </li>
-            <li>
+            <li
+              onClick={() => handleClick("opcion5")}
+              className={
+                selectedOption === "opcion5" ? "text-[#00dfd8]" : "text-white"
+              }
+            >
               <a
+                onClick={opens}
                 href="#Contact"
                 className="hover:text-[#00dfd8]   cursor-pointer"
               >
