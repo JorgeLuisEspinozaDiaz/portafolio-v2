@@ -119,7 +119,7 @@ const NavBar = () => {
           }`}
         >
           <p className="mb-4">
-            &copy; Copyright{" "}
+            &copy;copyright{" "}
             <span className="font-semibold">Jorge Espinoza</span>
           </p>
         </div>

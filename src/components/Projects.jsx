@@ -5,7 +5,6 @@ import pokemon from "../../public/projects/pokemon.png";
 import quotes from "../../public/projects/quotes.png";
 import rick from "../../public/projects/rickandmorty.png";
 import weather from "../../public/projects/weather.png";
-// import destino from "../../public/projects/destino.png";
 
 import style from "./style/project.module.css";
 

@@ -3,7 +3,6 @@ import fondo from "../../public/fon1.jpeg";
 import About from "./About";
 import Technologies from "./Technologies";
 import { Typewriter } from "react-simple-typewriter";
-import Softskills from "./Softskills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Top from "./Top";
@@ -54,7 +53,6 @@ const Main = () => {
       </section>
       <About />
       <Technologies />
-      {/* <Softskills /> */}
       <Resume />
       <Projects />
       <Contact />
