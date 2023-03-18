@@ -5,7 +5,7 @@ import pokemon from "../../public/projects/pokemon.png";
 import quotes from "../../public/projects/quotes.png";
 import rick from "../../public/projects/rickandmorty.png";
 import weather from "../../public/projects/weather.png";
-
+import destino from "../../public/projects/destino.png";
 import style from "./style/project.module.css";
 
 const Projects = () => {
@@ -27,7 +27,7 @@ const Projects = () => {
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
-            src={ecommerce}
+            src={destino}
             alt=""
           />
 
