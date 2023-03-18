@@ -83,29 +83,36 @@ const Contact = () => {
           </div>
         </div>
         <div className={`${style.box} basis-[60%]   p-[30px] rounded-[5px] `}>
-          <form className="grid grid-cols-1   ">
+          <form
+            action="https://formsubmit.co/espinozadiazjorgeluis@gmail.com"
+            method="POST"
+            className="grid grid-cols-1   "
+          >
             <div className="w-full mt-6 ">
               <input
-                className="w-full h-10 py-[10px] px-[20px] text-base rounded-[4px]  font-medium 
+                className="w-full h-10 py-[10px] px-[20px] text-base rounded-[4px]  font-medium  text-black
                 focus:outline-none focus:border-2 focus:border-cyan-500 focus:ring-green-700 focus:ring-1 border border-[#5b5a5a]"
                 type="text"
                 placeholder="Nombre"
+                name="text"
               />
             </div>
             <div className="w-full  mt-6">
               <input
-                className="w-full h-10 py-[10px] px-[20px] text-base rounded-[4px]  font-medium
+                className="w-full h-10 py-[10px] px-[20px] text-base rounded-[4px]  font-medium text-black
                 focus:outline-none focus:border-2 focus:border-cyan-500 focus:ring-green-700 focus:ring-1"
-                type="text"
+                type="email"
                 placeholder="email"
+                name="email"
               />
             </div>
             <div className="w-full  mt-6">
               <textarea
-                className="w-full  py-[10px] px-[20px] text-base rounded-[4px]  font-medium outline-none 
+                className="w-full  text-black py-[10px] px-[20px] text-base rounded-[4px]  font-medium outline-none 
                 focus:border-2  focus:border-[#00dfd8] focus:ring-[#00dfd8] focus:ring-1 resize-none"
                 rows="12"
                 placeholder="mensaje"
+                name="text"
               />
             </div>
             <div className="w-full  mt-6">

@@ -7,7 +7,7 @@ const NavBar = () => {
     setOpen(!open);
   };
 
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("opcion1");
 
   const handleClick = (option) => {
     setSelectedOption(option);

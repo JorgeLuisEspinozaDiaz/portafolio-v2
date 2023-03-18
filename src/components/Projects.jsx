@@ -26,7 +26,7 @@ const Projects = () => {
           className={`${style.project__figure}  ${style.box} w-full h-80  relative overflow-hidden rounded-lg `}
         >
           <img
-            className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
+            className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-c  over`}
             src={destino}
             alt=""
           />
