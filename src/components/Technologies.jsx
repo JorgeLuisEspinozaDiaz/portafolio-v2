@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import git from "../../public/git.png";
 import post from "../../public/post.png";
 import router from "../../public/router.png";
 import bootstrap from "../../public/bootstrap.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Technologies = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <section className="  py-[50px] px-[30px] max-[850px]:py-[50px]  max-[850px]:px-[15px] bg-[#03051c] text-blue-50 ">
-      <h1 className="text-3xl font-semibold mb-3 text-[#00dfd8]">
+    <section className=" py-[50px] px-[30px] max-[850px]:py-[50px]  max-[850px]:px-[15px] bg-[#03051c] text-blue-50 ">
+      <h1
+        className="text-3xl font-semibold mb-3 text-[#00dfd8]"
+        data-aos="fade-down"
+      >
         Mis Tecnologias
       </h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>

@@ -1,12 +1,19 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Resume = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section
       id="Resume"
-      className="  py-[50px] px-[15px] sm:px-[30px] bg-[#03051c]  text-white"
+      className="py-[50px] px-[15px] sm:px-[30px] bg-[#03051c]  text-white"
     >
-      <h1 className="text-3xl font-semibold mb-3 text-[#00dfd8]">
+      <h1
+        className="text-3xl font-semibold mb-3 text-[#00dfd8]"
+        data-aos="fade-down"
+      >
         Educacion y Experiencia
       </h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>
@@ -23,6 +30,9 @@ const Resume = () => {
 
               before:content-[''] before:absolute before:top-0 before:-left-[8px]
                before:w-[15px]  before:h-[15px] before:rounded-full  before:bg-white before:border-2 before:border-[#00dfd8]"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
             >
               <h3 className="text-base font-semibold uppercase text-[#00dfd8]">
                 Jorge Espinoza
@@ -53,7 +63,11 @@ const Resume = () => {
               Educación
             </h3>
 
-            <div>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div
                 className="pt-0 pr-[20px] pb-0  pl-[20px] mt-5 mx-0   border-l-2 border-[#00dfd8] relative
               before:content-[''] before:absolute before:top-0 before:-left-[8px]
@@ -111,6 +125,9 @@ const Resume = () => {
             className="pt-0 pr-[20px] pb-0  pl-[20px]  my-5 mx-0 border-l-2 border-[#00dfd8] relative
               before:content-[''] before:absolute before:top-0 before:-left-[8px]
                before:w-[15px]  before:h-[15px] before:rounded-full  before:bg-white before:border-2 before:border-[#00dfd8]"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-duration="1000"
           >
             <h3 className="text-base font-semibold uppercase text-[#00dfd8]">
               Desarrollador Frontend React

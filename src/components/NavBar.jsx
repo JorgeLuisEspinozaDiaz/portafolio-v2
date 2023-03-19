@@ -1,19 +1,20 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import foto from "../../public/nav.png";
+import style from "./style/project.module.css";
 const NavBar = () => {
   const [open, setOpen] = useState(true);
+  const [open1, setOpen1] = useState(false);
 
   const opens = () => {
     setOpen(!open);
   };
 
-  const [selectedOption, setSelectedOption] = useState("opcion1");
-
-  const handleClick = (option) => {
-    setSelectedOption(option);
+  const closeMenu = () => {
+    setOpen1(false);
+    setOpen(!open);
   };
 
-  console.log(open);
   return (
     <>
       {open ? (
@@ -71,81 +72,83 @@ const NavBar = () => {
         </div>
 
         <nav className="mt-[50px]">
-          <ul className="flex  flex-col gap-6">
-            <li
-              onClick={() => handleClick("opcion1")}
-              className={
-                selectedOption === "opcion1" ? "text-[#00dfd8]" : "text-white"
-              }
-            >
-              <a
-                onClick={opens}
-                href="#Home"
+          <ul
+            className={
+              open1 ? "active flex  flex-col gap-6" : "flex  flex-col gap-6"
+            }
+          >
+            <li>
+              <Link
+                to="Home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={closeMenu}
                 className="hover:text-[#00dfd8] cursor-pointer"
               >
                 <i className="fa-solid fa-house text-xl mr-[10px] "></i>
                 Home
-              </a>
+              </Link>
             </li>
-            <li
-              onClick={() => handleClick("opcion2")}
-              className={
-                selectedOption === "opcion2" ? "text-[#00dfd8]" : "text-white"
-              }
-            >
-              <a
-                href="#About"
-                onClick={opens}
+
+            <li>
+              <Link
+                to="About"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={closeMenu}
                 className="hover:text-[#00dfd8]    cursor-pointer"
               >
                 <i className="fa-solid fa-user text-xl mr-[10px] "></i>
                 Acerca de Mí
-              </a>
+              </Link>
             </li>
-            <li
-              onClick={() => handleClick("opcion3")}
-              className={
-                selectedOption === "opcion3" ? "text-[#00dfd8]" : "text-white"
-              }
-            >
-              <a
-                onClick={opens}
-                href="#Resume"
+
+            <li>
+              <Link
+                to="Resume"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={closeMenu}
                 className="hover:text-[#00dfd8]  cursor-pointer "
               >
                 <i className="fa-sharp fa-solid fa-graduation-cap text-xl mr-[10px] "></i>
                 Educacion
-              </a>
+              </Link>
             </li>
-            <li
-              onClick={() => handleClick("opcion4")}
-              className={
-                selectedOption === "opcion4" ? "text-[#00dfd8]" : "text-white"
-              }
-            >
-              <a
-                onClick={opens}
-                href="#Project"
+
+            <li>
+              <Link
+                to="Project"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={closeMenu}
                 className="hover:text-[#00dfd8]  cursor-pointer "
               >
                 <i className="fa-solid fa-briefcase text-xl mr-[10px] "></i>
                 Proyectos
-              </a>
+              </Link>
             </li>
-            <li
-              onClick={() => handleClick("opcion5")}
-              className={
-                selectedOption === "opcion5" ? "text-[#00dfd8]" : "text-white"
-              }
-            >
-              <a
-                onClick={opens}
-                href="#Contact"
-                className="hover:text-[#00dfd8]   cursor-pointer"
+            <li>
+              <Link
+                to="Contact"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={closeMenu}
+                className="hover:text-[#00dfd8] cursor-pointer"
               >
-                <i className="fa-solid fa-address-book text-xl mr-[10px] "></i>
+                <i className="fa-solid fa-address-book text-xl mr-[10px]"></i>
                 Contactos
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import about from "../../public/about.png";
 import cv from "../../public/CV-JorgeEspinoza.pdf";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <section
       id="About"
-      className=" py-[70px] px-[30px] max-[850px]:py-[50px]  max-[850px]:px-[15px] bg-[#03051c]  text-white "
+      className=" py-[70px] px-[30px] max-[850px]:py-[50px]  max-[850px]:px-[15px] bg-[#03051c] text-white "
     >
-      <h1 className="text-3xl font-semibold mb-3 text-[#00dfd8]">
+      <h1
+        className="text-3xl font-semibold mb-3 text-[#00dfd8]"
+        data-aos="fade-down"
+      >
         Acerca de mí
       </h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>
@@ -21,12 +30,12 @@ const About = () => {
       <div className="flex gap-5 mt-6  max-[850px]:flex-col ">
         <div className="basis-[30%] text-center h-[370px]  max-[850px]:flex  max-[850px]:justify-center  max-[850px]:items-center  max-[850px]:w-full ">
           <img
-            className="w-full h-full object-cover   max-[850px]:w-[50%]   max-[450px]:w-[90%] "
+            className="w-full h-full object-cover   max-[850px]:w-[50%]   max-[450px]:w-[90%]  "
             src={about}
           />
         </div>
 
-        <div className="basis-[70%]">
+        <div className="basis-[70%]" data-aos="fade-left">
           <h2 className="text-3xl font-bold  max-[850px]:text-2xl text-[#00dfd8]  ">
             Front-End Developer!
           </h2>

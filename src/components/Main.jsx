@@ -18,11 +18,9 @@ const Main = () => {
   };
 
   return (
-    <main
-      id="Home"
-      className="ml-[300px] bg-white transition-all duration-300   max-[1050px]:ml-0 relative "
-    >
+    <main className="ml-[300px] bg-white transition-all duration-300   max-[1050px]:ml-0 relative ">
       <section
+        id="Home"
         style={{ backgroundImage: `url(${fondo})` }}
         className="h-screen w-full bg-no-repeat bg-cover bg-fixed	 flex  flex-col justify-center relative  p-[70px] 
         before:content-[''] before:w-full before:h-full before:bg-[#18171750]  before:absolute before:top-0 before:left-0 max-[670px]:p-[30px] "

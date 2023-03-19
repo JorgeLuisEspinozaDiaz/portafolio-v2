@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import crud from "../../public/projects/crud.png";
 import ecommerce from "../../public/projects/ecommerce.png";
 import pokemon from "../../public/projects/pokemon.png";
@@ -7,23 +7,36 @@ import rick from "../../public/projects/rickandmorty.png";
 import weather from "../../public/projects/weather.png";
 import destino from "../../public/projects/destino.png";
 import style from "./style/project.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section
       id="Project"
       className=" py-[50px] px-[15px] bg-[#03051c] text-blue-50"
     >
-      <h1 className="text-3xl font-semibold mb-3 text-[#00dfd8]">Proyectos</h1>
+      <h1
+        className="text-3xl font-semibold mb-3 text-[#00dfd8]"
+        data-aos="fade-down"
+      >
+        Proyectos
+      </h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>
       <p className="text-lg text-justify mt-4 font-medium  ">
         Estos son algunos proyectos que he desarrollado en distintas áreas del
         desarrollo web con mucha dedicación.
       </p>
       {/* //?item 1 */}
-      <div className="mt-[50px]  px-[20px] grid grid-cols-3 gap-9  max-[600px]:grid-cols-1 max-[1300px]:grid-cols-2">
+      <div className="mt-[70px]  px-[20px] grid grid-cols-3 gap-9  max-[600px]:grid-cols-1 max-[1300px]:grid-cols-2">
         <figure
           className={`${style.project__figure}  ${style.box} w-full h-80  relative overflow-hidden rounded-lg `}
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-c  over`}
@@ -63,6 +76,9 @@ const Projects = () => {
 
         <figure
           className={`${style.project__figure}  ${style.box} w-full h-80  relative overflow-hidden rounded-lg `}
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
@@ -99,6 +115,9 @@ const Projects = () => {
         {/* //?item 2 */}
         <figure
           className={`${style.project__figure} ${style.box} w-full h-80  relative overflow-hidden rounded-lg`}
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
@@ -132,6 +151,8 @@ const Projects = () => {
         {/* //?item 3 */}
         <figure
           className={`${style.project__figure}  ${style.box} w-full h-80  relative overflow-hidden rounded-lg`}
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
@@ -166,6 +187,8 @@ const Projects = () => {
         {/* //?item 4 */}
         <figure
           className={`${style.project__figure} ${style.box} w-full h-80 relative overflow-hidden rounded-lg`}
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
@@ -199,6 +222,8 @@ const Projects = () => {
         {/* //?item 5 */}
         <figure
           className={`${style.project__figure} ${style.box} w-full h-80  relative overflow-hidden rounded-lg`}
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
@@ -232,6 +257,8 @@ const Projects = () => {
         {/* //?item 6 */}
         <figure
           className={`${style.project__figure}  ${style.box} w-full h-80  relative overflow-hidden rounded-lg`}
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img
             className={`${style.figure__img} w-full h-full transition-all duration-500 ease-out object-cover`}
