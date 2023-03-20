@@ -66,9 +66,10 @@ const NavBar = () => {
             </a>
             <a
               className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center p-3 hover:bg-[#ddd9d9]"
-              href="#"
+              href="https://www.facebook.com/jorgeluis.espinozadiaz/"
+              target="_blank"
             >
-              <i className="fa-brands fa-twitter  text-2xl text-black "></i>
+              <i class="fa-brands fa-facebook text-2xl text-black  "></i>
             </a>
           </div>
         </div>
