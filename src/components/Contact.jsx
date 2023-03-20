@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
 
 import style from "./style/project.module.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Contact = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
   return (
     <section
       className="py-[50px] px-[15px] pb-[150px]  bg-[#03051c]  text-white "
@@ -15,7 +10,7 @@ const Contact = () => {
     >
       <h1
         className="text-3xl font-semibold mb-3 text-[#00dfd8]"
-        data-aos="fade-down"
+        data-aos="flip-down"
       >
         Contacto
       </h1>
@@ -28,7 +23,6 @@ const Contact = () => {
         <div
           className={`${style.box} basis-[40%] 
             p-[30px] rounded-[5px] `}
-          data-aos="fade-right"
         >
           <div className="flex gap-4 items-center my-[30px] mx-0  ">
             <div>
@@ -93,10 +87,7 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
-        <div
-          className={`${style.box} basis-[60%]   p-[30px] rounded-[5px] `}
-          data-aos="fade-left"
-        >
+        <div className={`${style.box} basis-[60%]   p-[30px] rounded-[5px] `}>
           <form
             action="https://formsubmit.co/espinozadiazjorgeluis@gmail.com"
             method="POST"

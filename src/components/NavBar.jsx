@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import foto from "../../public/nav.png";
-import style from "./style/project.module.css";
 const NavBar = () => {
   const [open, setOpen] = useState(true);
   const [open1, setOpen1] = useState(false);
@@ -46,27 +45,30 @@ const NavBar = () => {
           <div className="flex gap-2 text-2xl  ">
             <a
               className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center p-3 hover:bg-[#ddd9d9]	"
-              href="#"
+              href="https://www.linkedin.com/in/espinoza-jorgeluis/"
+              target="_blank"
             >
-              <i className="fa-brands fa-facebook text-2xl text-black "></i>
+              <i className="fa-brands fa-linkedin text-2xl text-black "></i>
             </a>
             <a
               className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center p-3	 hover:bg-[#ddd9d9] 	"
-              href="#"
+              href="https://github.com/JorgeLuisEspinozaDiaz"
+              target="_blank"
             >
-              <i className="fa-brands fa-twitter  text-2xl text-black "></i>
+              <i className="fa-brands fa-github  text-2xl text-black "></i>
+            </a>
+            <a
+              className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center	p-3	hover:bg-[#ddd9d9]"
+              href="https://www.instagram.com/jorgeespinozadiaz123/"
+              target="_blank"
+            >
+              <i className="fa-brands fa-instagram  text-2xl text-black "></i>
             </a>
             <a
               className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center p-3 hover:bg-[#ddd9d9]"
               href="#"
             >
-              <i className="fa-brands fa-github  text-2xl text-black "></i>
-            </a>
-            <a
-              className="w-9 h-9 rounded-full bg-[#00dfd8]  flex justify-center items-center	p-3	hhover:bg-[#ddd9d9]"
-              href="#"
-            >
-              <i className="fa-brands fa-instagram  text-2xl text-black "></i>
+              <i className="fa-brands fa-twitter  text-2xl text-black "></i>
             </a>
           </div>
         </div>
@@ -159,8 +161,8 @@ const NavBar = () => {
           }`}
         >
           <p className="mb-4">
-            &copy;copyright{" "}
-            <span className="font-semibold">Jorge Espinoza</span>
+            &copy;copyright{"  "} {"  "}
+            <span className="font-semibold text-[#00dfd8]">Jorge Espinoza</span>
           </p>
         </div>
       </header>

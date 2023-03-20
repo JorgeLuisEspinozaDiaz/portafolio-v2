@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
@@ -16,12 +16,15 @@ const About = () => {
     >
       <h1
         className="text-3xl font-semibold mb-3 text-[#00dfd8]"
-        data-aos="fade-down"
+        data-aos="flip-down"
       >
-        Acerca de mí
+        <span>A</span>cerca de mí
       </h1>
       <div className="w-[80px] h-1 rounded bg-slate-500"></div>
-      <p className="text-base text-justify mt-4 font-medium   ">
+      <p
+        className="text-base text-justify mt-4 font-medium   "
+        data-aos="flip-down"
+      >
         ¡Hola! Mi nombre es <strong>Jorge Espinoza</strong> soy muy apasionado y
         dedicado a mi trabajo. Con el compromiso que me caracteriza busco
         mejorar mis conocimientos cada día. En este momento estoy buscando
@@ -35,7 +38,11 @@ const About = () => {
           />
         </div>
 
-        <div className="basis-[70%]" data-aos="fade-left">
+        <div
+          className="basis-[70%]"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <h2 className="text-3xl font-bold  max-[850px]:text-2xl text-[#00dfd8]  ">
             Front-End Developer!
           </h2>
@@ -78,7 +85,7 @@ const About = () => {
                 </span>
               </li>
             </ul>
-            <button className="bg-[#14b6bb] text-white font-semibold cursor-pointer text-xl p-2 rounded transition-all duration-500 hover:translate-y-1 animate-bounce mt-[15px]">
+            <button className="bg-[#14b6bb] italic font-semibold cursor-pointer text-xl p-2 rounded transition-all duration-500 hover:translate-y-1 animate-bounce mt-[15px]">
               <a href={cv} download>
                 <i className="fa-solid fa-download mr-2 bg-[#14b6bb]"></i>
                 Descargar cv

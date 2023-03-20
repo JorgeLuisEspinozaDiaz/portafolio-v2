@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+
 const Resume = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
   return (
     <section
       id="Resume"
@@ -12,7 +8,7 @@ const Resume = () => {
     >
       <h1
         className="text-3xl font-semibold mb-3 text-[#00dfd8]"
-        data-aos="fade-down"
+        data-aos="flip-down"
       >
         Educacion y Experiencia
       </h1>
@@ -30,9 +26,8 @@ const Resume = () => {
 
               before:content-[''] before:absolute before:top-0 before:-left-[8px]
                before:w-[15px]  before:h-[15px] before:rounded-full  before:bg-white before:border-2 before:border-[#00dfd8]"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos="fade-up"
+              data-aos-duration="3000"
             >
               <h3 className="text-base font-semibold uppercase text-[#00dfd8]">
                 Jorge Espinoza
@@ -63,11 +58,7 @@ const Resume = () => {
               Educación
             </h3>
 
-            <div
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div data-aos="fade-up" data-aos-duration="3000">
               <div
                 className="pt-0 pr-[20px] pb-0  pl-[20px] mt-5 mx-0   border-l-2 border-[#00dfd8] relative
               before:content-[''] before:absolute before:top-0 before:-left-[8px]
@@ -125,9 +116,8 @@ const Resume = () => {
             className="pt-0 pr-[20px] pb-0  pl-[20px]  my-5 mx-0 border-l-2 border-[#00dfd8] relative
               before:content-[''] before:absolute before:top-0 before:-left-[8px]
                before:w-[15px]  before:h-[15px] before:rounded-full  before:bg-white before:border-2 before:border-[#00dfd8]"
-            data-aos="fade-left"
-            data-aos-offset="500"
-            data-aos-duration="1000"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <h3 className="text-base font-semibold uppercase text-[#00dfd8]">
               Desarrollador Frontend React
